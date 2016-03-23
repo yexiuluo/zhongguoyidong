@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="tab.js"></script>
+	<style type="text/css">
+     ul,li{
+		padding: 0;
+		margin:0;
+		list-style:none;
+	}
+	a{
+		text-decoration: none;
+		display:block;
+		color:#000;
+	}
+
+	.box{
+		width:1200px;
+		height:40px;
+		background: #e4e4e4;
+		margin:100px auto;
+		position:relative; 
+	}
+	.tab{
+		width:1200px;
+		height:40px;
+	}
+	.tab li{
+		float: left;
+		border-right:1px solid #fff;
+		width:259px;
+		height:40px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.tab .first{
+		width:159px;
+		height:40px;
+		border-top:2px solid #0085d0;
+	}
+	.tab a{
+		display:block;
+	}
+	.tab a:hover{
+		background:#f3f3f3;
+		color:#0085d0;
+
+	}
+	.downMenu{
+		width:1200px;
+		height:40px;
+		background: #fff;
+		box-shadow: 0px 3px 10px red;
+		position: absolute;
+		top:41px;
+		left:0;
+		display:none;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="tab">
+			<li class="first"><a href="javascript:;">首页</a></li>
+			<li class="item"><a href="javascript:;">移动商城</a>
+                              <div class="downMenu">111</div>
+			</li>
+			<li class="item"><a href="javascript:;">我的移动</a>
+			<div class="downMenu">222</div></li>
+			<li class="item"><a href="javascript:;">网上营业厅</a>
+                       <div class="downMenu">333</div>
+			</li>
+			<li class="item"><a href="javascript:;">服务与支持</a>
+                      <div class="downMenu">444</div>
+			</li>
+			
+			
+            
+		</ul>
+
+	</div>
+</body>
+</html>
